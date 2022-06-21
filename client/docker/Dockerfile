@@ -1,6 +1,6 @@
 FROM php:8.0.20-fpm
 RUN apt-get update \
-    && apt-get install -y nano vim wget git unzip zlib1g-dev libpng-dev libzip-dev libpq-dev libicu-dev iputils-ping libnss3-tools
+    && apt-get install -y vim wget git unzip zlib1g-dev libpng-dev libzip-dev libpq-dev libicu-dev iputils-ping libnss3-tools
 RUN docker-php-ext-install bcmath zip gd intl
 RUN docker-php-ext-install sockets
 RUN pecl install grpc-1.44.0
