@@ -13,6 +13,10 @@ RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 RUN curl --remote-name --time-cond ./php/cacert.pem https://curl.se/ca/cacert.pem
 
+RUN curl -JLO "https://dl.filippo.io/mkcert/latest?for=linux/amd64"
+RUN chmod +x mkcert-v*-linux-amd64
+RUN mv mkcert-v*-linux-amd64 /usr/local/bin/mkcert
+
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 WORKDIR /var/www
