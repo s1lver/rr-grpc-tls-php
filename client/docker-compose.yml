@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  php-8:
+    container_name: client-php
+    hostname: client-php
+    build: ./docker/
+    volumes:
+      - .:/var/www
+    networks:
+      - client-php-network
+
+networks:
+  client-php-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.230.0/28
