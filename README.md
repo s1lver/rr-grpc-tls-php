@@ -2,6 +2,7 @@
 
 Implementing a simple example of client-server communication using TLS in Docker in PHP
 
+This example is based on https://github.com/s1lver/roadrunner-grpc/tree/master/example/echo
 
 ## Setup
 
