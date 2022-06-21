@@ -2,4 +2,5 @@
 /client/composer.lock
 /client/vendor
 /server/composer.lock
+/server/rr
 /server/vendor
