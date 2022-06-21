@@ -1,5 +1,4 @@
 #!/bin/sh
-
 set -eu
 
 composer install --no-interaction
