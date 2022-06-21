@@ -16,3 +16,5 @@ RUN curl --remote-name --time-cond ./php/cacert.pem https://curl.se/ca/cacert.pe
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 WORKDIR /var/www
+
+ENTRYPOINT ["sh", "docker/entrypoint.sh"]
