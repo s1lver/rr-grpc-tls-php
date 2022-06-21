@@ -61,3 +61,11 @@ or
 docker exec -it client-php bash
 php ping.php
 ```
+
+Response
+
+> Status code: 0
+> 
+> Status details:
+> 
+> 2022-06-21 13:44:39: PONG
