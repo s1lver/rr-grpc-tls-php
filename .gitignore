@@ -1,3 +1,5 @@
 .idea
 /client/composer.lock
 /client/vendor
+/server/composer.lock
+/server/vendor
