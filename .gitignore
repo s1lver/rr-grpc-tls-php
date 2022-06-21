@@ -1,6 +1,8 @@
 .idea
 /client/composer.lock
+/client/rootCA.pem
 /client/vendor
 /server/composer.lock
 /server/rr
+/server/rootCA.pem
 /server/vendor
