@@ -7,7 +7,8 @@ server:
 
 grpc:
   listen: "tcp://127.0.0.1:9001"
-  proto: "service.proto"
+  proto:
+    - service.proto
   max_send_msg_size: 50
   max_recv_msg_size: 50
   max_connection_idle: 0s
