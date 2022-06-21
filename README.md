@@ -28,3 +28,13 @@ Stop a running container with a client
 ```bash
 make down-client
 ```
+
+Running container with a server
+```bash
+make start-server
+```
+
+Running container with a client
+```bash
+make start-client
+```
