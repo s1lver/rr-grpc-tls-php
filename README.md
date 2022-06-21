@@ -15,3 +15,16 @@ Build the server part
 ```bash
 make build-server
 ```
+
+## Additional commands
+
+Stop a running container with a server 
+
+```bash
+make down-server
+```
+
+Stop a running container with a client 
+```bash
+make down-client
+```
