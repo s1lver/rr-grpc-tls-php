@@ -9,6 +9,11 @@ grpc:
   listen: "tcp://0.0.0.0:9001"
   proto:
     - service.proto
+  tls:
+    key: "localhost+3-key.pem"
+    cert: "localhost+3.pem"
+    root_ca: "rootCA.pem"
+    client_auth_type: no_client_certs
   max_send_msg_size: 50
   max_recv_msg_size: 50
   max_connection_idle: 0s
