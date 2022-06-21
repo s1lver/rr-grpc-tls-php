@@ -49,3 +49,15 @@ mkcert localhost 127.0.0.1 ::1 192.168.231.2
 mkcert -CAROOT
 cp /root/.local/share/mkcert/rootCA.pem ./rootCA.pem
 ```
+
+## Test connect
+
+```bash
+docker exec -it client-php php ping.php
+```
+or
+
+```bash
+docker exec -it client-php bash
+php ping.php
+```
