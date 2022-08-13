@@ -7,11 +7,7 @@ RUN pecl install grpc-1.44.0
 RUN pecl install protobuf-3.19.4
 RUN docker-php-ext-enable grpc protobuf
 
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php composer-setup.php
-RUN php -r "unlink('composer-setup.php');"
-RUN mv composer.phar /usr/local/bin/composer
-RUN curl --remote-name --time-cond ./php/cacert.pem https://curl.se/ca/cacert.pem
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
