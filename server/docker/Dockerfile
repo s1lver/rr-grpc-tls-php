@@ -1,4 +1,4 @@
-FROM php:8.0.20-fpm
+FROM php:8.0.22-fpm
 RUN apt-get update \
     && apt-get install -y vim wget htop unzip zlib1g-dev libpng-dev libzip-dev libicu-dev iputils-ping libnss3-tools
 RUN docker-php-ext-install bcmath zip gd intl
