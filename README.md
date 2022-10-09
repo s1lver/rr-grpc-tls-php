@@ -1,4 +1,4 @@
-# rr-grpc-tls-php
+# Using gRPC with TLS in Roadrunner
 
 Implementing a simple example of client-server communication using TLS in Docker in PHP
 
